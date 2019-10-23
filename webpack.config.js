@@ -31,7 +31,8 @@ module.exports = {
 
 	output: {
 		filename: '[name].[chunkhash].js',
-		path: path.resolve(__dirname, 'dist')
+		path: path.resolve(__dirname, 'dist'),
+		publicPath: 'https://stb2cdes01.blob.core.windows.net/stb2cdes01-bs01'
 	},
 
 	plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin({
